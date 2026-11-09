@@ -18,6 +18,39 @@
 
 **One useful detail: Shein *did* start close to a reseller/drop-ship model.** Around 2008–2013 (as ZZKKO, then SheInside.com) it was a small online shop that bought finished goods from **Guangzhou's wholesale clothing markets** and resold them online. It began building its own supply chain around 2012–2014, moved its headquarters to Guangzhou in 2014, and renamed itself Shein in 2015. By 2016 it had about 800 designers and pattern makers. So the path was: **reseller → private label with contract factories → platform.**
 
+### 1b. "Their site looks like AliExpress. Are they buying from Alibaba/AliExpress after I order?"
+
+**No.** When you order on Shein, nobody goes to Alibaba or AliExpress to buy the item. Here is what actually happens:
+
+```
+ DROP SHIPPING (what it is NOT)                 SHEIN (what it actually is)
+ ──────────────────────────────                 ───────────────────────────
+ 1. You order on the store                      1. Shein already ordered 100–200 units
+ 2. Store owner goes to AliExpress/Alibaba         from its own contract factory
+    and buys 1 unit                             2. Units already sitting in Shein's
+ 3. AliExpress seller ships to you                 warehouse (Foshan, China, or
+    in THEIR packaging                             Indiana/US hubs)
+ 4. Store owner keeps the difference            3. You order → Shein picks it off its
+                                                   own shelf → ships in Shein packaging
+                                                4. Bestsellers get reordered from the
+                                                   same factory
+```
+
+**Why it looks like AliExpress:** both draw on the **same factory cluster** in Guangzhou and Foshan. The same small workshops that make goods for Shein also make similar or identical unbranded items that end up on 1688, Alibaba, and AliExpress. The resemblance goes both ways:
+- Many AliExpress and Alibaba sellers **copy Shein's product photos and designs** and sell look-alikes, so you see "the same" item in both places.
+- Some Shein items are factory-made versions of trending styles, so close copies exist elsewhere too.
+
+Same factories and similar products do not mean Shein is buying from AliExpress. AliExpress sells to *anyone*, and Shein **contracts the factories directly**, owns the order, and stores the stock in its own buildings.
+
+**Evidence it is NOT drop shipping:**
+- **Own warehouses.** Finished goods go to Shein's main warehouse in **Foshan** (about 150,000 m²) *before* the product is listed. In the US, it has an Indiana hub of over 2.5 million sq ft, including a new automated warehouse of about 737,000 sq ft in Lebanon, IN, opened in 2026.
+- **Inventory on its books.** About 36 days of stock. Its IPO filing reports cost of goods for products it buys from its ~7,000 suppliers, and says most products are stored in central warehouses in China before shipping.
+- **Shein-branded packaging and labels.** Orders ship in Shein bags with Shein labels, one parcel per order. A drop-shipped order typically arrives in several packages from different sellers.
+
+**The one exception: the Shein Marketplace.** Since about 2023, Shein also lets **outside sellers** list on its site (third-party, about 14% of revenue). Those sellers ship their own orders, and *some* of them may well be drop shippers who buy from Alibaba or 1688. On the product page, these items say **"Sold by [seller name]"** instead of "Sold by SHEIN." So the core Shein-branded items are **not** drop shipped. Some marketplace items might be, but that is the sellers' choice, not Shein's model.
+
+**What this means for us:** drop shipping from AliExpress is how Shein *started* (it resold Guangzhou wholesale goods around 2008–2013). It became Shein when it **cut out the middleman**: it went straight to the factories, ordered small batches *before* selling, and stocked them itself. That is the step to plan toward (§6, Tier 2).
+
 ---
 
 ## 2. How the machine works (end to end)
@@ -229,6 +262,14 @@ Shein's full model needs billions in capital, thousands of suppliers, and its ow
 - [Just Style — Stop Uyghur Genocide threatens legal action over Shein IPO](https://www.just-style.com/news/stop-uyghur-genocide-threatens-legal-action-if-shein-ipo-approved)
 - [Business & Human Rights — Italy fines Shein €1M for greenwashing](https://www.business-humanrights.org/de/neuste-meldungen/italy-the-competition-authority-fines-shein-1-million-for-misleading-environmental-claims/)
 - [Dataconomy — Shein faces EU fines for deceptive practices](https://dataconomy.com/2025/05/27/fast-fashion-giant-shein-now-faces-eu-fines-for-its-deceptive-sales-practices)
+
+**Drop shipping vs. own inventory (§1b)**
+- [Tech Buzz China — Details on Shein's operations (Foshan warehouse)](https://techbuzzchina.substack.com/p/11663150_11-22-2022-copy-01)
+- [Worldcrunch — Shein reality check (Guangzhou workshops)](https://worldcrunch.com/business-finance/dark-side-shein-exploitation/)
+- [Global Sources — Where is Shein located](https://www.globalsources.com/knowledge/where-is-shein-located/)
+- [Digital Commerce 360 — Shein's 737,000 sq ft Indiana warehouse (Sept 2026)](https://www.digitalcommerce360.com/2026/09/14/shein-expands-u-s-fulfillment-network-with-737000-square-foot-indiana-warehouse/)
+- [Indianapolis Business Journal — Shein's US distribution center in Indiana](https://www.ibj.com/articles/sheins-u-s-expansion-starts-with-distribution-center-in-indiana)
+- [Shein Group — Indiana facility press release](https://www.sheingroup.com/newsroom/new-shein-indiana-facility-to-generate-an-expected-usd175-million-per-year-in-economic-impact-to)
 
 **Storefront / online shopping (§7)**
 - [Business of Fashion — How brands get customers addicted to shopping](https://www.businessoffashion.com/articles/technology/how-brands-get-customers-addicted-to-shopping/)
