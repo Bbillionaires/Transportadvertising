@@ -133,6 +133,74 @@ Shein's full model needs billions in capital, thousands of suppliers, and its ow
 
 ---
 
+## 7. The online shopping experience: how the storefront sells
+
+*Shein's servers block automated requests from this environment, so this section is based on published analyses, app-store listings, and Shein's public shipping pages, not a live crawl. Point values, prices, and thresholds change often. Check the live app before copying any number.*
+
+### 7.1 The shopping funnel
+
+```
+ DISCOVER                    BROWSE                       BUY                         COME BACK
+ ────────                    ──────                       ───                         ─────────
+ TikTok/IG haul videos  →   App home feed:           →   Low free-ship bar      →   Daily check-in points
+ by micro-influencers       personalized "For You",      ($15–$29), coupons,         (7-day streak), flash
+ + affiliate links +        endless new arrivals,        points as cash, BNPL        sales at random times,
+ paid social/search         flash-sale timers,           (Afterpay etc.),            spin-the-wheel games,
+                            photo reviews with           first return free           review-for-points,
+                            size/fit data                                            push notifications
+```
+
+### 7.2 What each stage does (and why it works)
+
+| Stage | Mechanic | Why it works |
+|---|---|---|
+| **Acquisition** | A large always-on **micro-influencer program**: free clothes each month plus affiliate commission, with some macro or celebrity deals on top. The "Shein haul" video is the core ad format. | Thousands of small creators cost less than a few big ones and create a constant stream of social proof. Low prices make hauls of 10–20 items possible, and that *is* the content. |
+| **Catalog** | Thousands of new styles every day. New arrivals are always at the top. | "There's something new every time I open it" gives people a reason to open the app daily. The catalog doubles as the demand test from §2. |
+| **Personalization** | A recommendation feed, search ranking, and size recommendations based on stated measurements, purchase history, and returns. | Showing each person the styles most likely to sell feeds the test-and-reorder loop. |
+| **Social proof** | **Photo reviews** with the reviewer's height, weight, and usual size, plus "true to size" fit summaries. | This addresses the biggest worry about cheap online clothing, which is whether it will fit. Shein rewards these reviews with points. |
+| **Urgency** | **Flash sales** lasting about 2–6 hours at changing times, countdown timers, and "low stock" labels. | Random timing means users can't plan around sales and have to check often. |
+| **Checkout** | A **low free-shipping minimum** ($15 on some days or first orders, $29 otherwise; $3.99 below that). Express shipping is $12.90, or $7.90 over $139. Coupons stack. Points work as cash. Buy-now-pay-later is available (Afterpay is mentioned). | Shoppers add a few more items to clear the free-shipping bar, which raises order value. A low bar keeps the first purchase cheap. |
+| **Delivery** | Standard shipping is about 7–12 business days. Shein's own page says about 77% of standard orders arrive within 7 business days. | That is slow next to Amazon, but low prices make customers accept it. US warehouses (§4) are shortening it. |
+| **Returns** | The first return from each order is free via USPS. Additional returns from the same order are $7.99 each. The return window is about 30–45 days, depending on the source. | Removes the risk of trying it for a first purchase. Charging for extra returns discourages ordering many sizes and sending most back. |
+| **Retention** | **Points:** daily check-in on a 7-day cycle, review and photo-review points, and profile tasks. Points expire (check-in points in about 7 days). **Mini-games** (spin the wheel, "Magic Draw") give coupons. Confetti animations and push notifications add to the effect. | Points that expire soon push people back into buying. This "check-in" design has drawn criticism as habit-forming and is part of what the EU DSA "addictive design" investigation is looking at (§5). |
+
+### 7.3 Tech stack (what's publicly detectable)
+
+- **App:** The Android package name is `com.zzkko`, which still carries the original ZZKKO company name from 2008.
+- **Web front end:** Tech-detection tools report **Vue.js + Vite + Tailwind**. This is a third-party estimate, not a Shein statement.
+- **Organization:** Search, recommendation, and front-end engineering reportedly sit in a Shenzhen engineering unit, separate from the Guangzhou supply-chain teams.
+- **No official Shein engineering blog was found.** "Build an app like Shein" guides online are generic agency marketing, not descriptions of Shein's real system.
+
+### 7.4 What to copy for our storefront (and what not to)
+
+**Copy:**
+1. **The creator engine.** Send free product to 50–200 micro-creators (5k–150k followers), give each an affiliate code, and make "haul" videos the main ad format.
+2. **A free-shipping bar just above a typical one-item order**, so most customers add a second item.
+3. **Photo reviews with height, weight, and size**, rewarded with store credit. This is the cheapest way to cut fit-related returns.
+4. **A first-order hook:** a discount plus a free first return.
+5. **A "New arrivals" drop on a fixed schedule** (for example, Tuesday and Friday) instead of 4,700 styles a day. Each drop also serves as our Tier 2 demand test (§6).
+6. **A sell-through dashboard** connecting storefront analytics to reorder decisions. This is the core loop of the whole model.
+
+**Avoid (regulatory and brand risk):**
+- Fake countdown timers, fake "low stock" labels, and inflated "original" prices. France fined Shein about €40M over misleading prices, and these practices are illegal under EU and many US state consumer laws.
+- Expiring-points and streak designs aimed at teenagers, which are part of the EU addictive-design investigation.
+- Sustainability claims we can't prove. Italy fined Shein €1M for greenwashing.
+
+### 7.5 Starter storefront stack
+
+| Piece | Option |
+|---|---|
+| Store + checkout | Shopify (fastest) or Next.js + Shopify Storefront API / Medusa (more control) |
+| Reviews with photos + fit data | Okendo / Judge.me / Yotpo |
+| Loyalty points & referrals | Smile.io / Rivo / LoyaltyLion |
+| Creator / affiliate program | Shopify Collabs, GRIN, Modash, or UpPromote |
+| Buy now, pay later | Shop Pay Installments, Afterpay, Klarna |
+| Email/SMS + push | Klaviyo (+ Postscript for SMS) |
+| Recommendations | Shopify Search & Discovery, Rebuy, or Nosto |
+| Returns | Loop Returns / AfterShip Returns (first return free, then fee) |
+
+---
+
 ## Sources
 
 - [Shein — Wikipedia (history: ZZKKO, SheInside, Guangzhou wholesale sourcing)](https://en.wikipedia.org/wiki/Shein)
@@ -161,3 +229,22 @@ Shein's full model needs billions in capital, thousands of suppliers, and its ow
 - [Just Style — Stop Uyghur Genocide threatens legal action over Shein IPO](https://www.just-style.com/news/stop-uyghur-genocide-threatens-legal-action-if-shein-ipo-approved)
 - [Business & Human Rights — Italy fines Shein €1M for greenwashing](https://www.business-humanrights.org/de/neuste-meldungen/italy-the-competition-authority-fines-shein-1-million-for-misleading-environmental-claims/)
 - [Dataconomy — Shein faces EU fines for deceptive practices](https://dataconomy.com/2025/05/27/fast-fashion-giant-shein-now-faces-eu-fines-for-its-deceptive-sales-practices)
+
+**Storefront / online shopping (§7)**
+- [Business of Fashion — How brands get customers addicted to shopping](https://www.businessoffashion.com/articles/technology/how-brands-get-customers-addicted-to-shopping/)
+- [Rivo — Shein loyalty program breakdown 2026](https://www.rivo.io/blog/shein-loyalty-program-complete-breakdown)
+- [CouponFollow — What are Shein points](https://couponfollow.com/research/what-are-shein-points)
+- [Marketing Monk — Shein's app retention strategies](https://marketingmonk.so/p/shein-s-app-retention-marketing-strategies)
+- [Adjust — Gamification in e-commerce apps](https://www.adjust.com/blog/how-e-commerce-apps-can-engage-users-with-gamification)
+- [Monetate — How Shein e-commerce leads fast fashion](https://monetate.com/resource/5-ways-shein-ecommerce-is-leading-the-evolution-of-fast-fashion/)
+- [techlist.ai — Shein tech-stack detection](https://techlist.ai/au.shein.com)
+- [KrASIA — Shein's AI and its valuation](https://kr-asia.com/unveiling-sheins-secret-artificial-intelligence-and-the-complexities-behind-its-usd-66-billion-valuation)
+- [Jing Daily — How Shein conquered global social media](https://jingdaily.com/how-chinas-shein-conquered-global-social-media/)
+- [Kolsquare — Inside Shein's influencer marketing strategy](https://www.kolsquare.com/en/blog/inside-sheins-influencer-marketing-strategy)
+- [Modash — Shein influencer marketing breakdown (2026)](https://www.modash.io/breakdowns/shein-influencer-marketing-strategy)
+- [Yahoo/Telegraph — How Shein deployed TikTok influencers](https://uk.news.yahoo.com/shein-deployed-army-tiktok-influencers-160309497.html)
+- [Shein — US shipping information](https://m.shein.com/ec/ecu/us/Shipping-Info-a-280.html)
+- [ShopBack — Shein free shipping guide](https://www.shopback.com/blog/fashion/free-shipping-shein)
+- [ShipBob — Guide to Shein shipping](https://www.shipbob.com/blog/shein-shipping/)
+- [ConsumerAffairs — Shein return policy decoded](https://www.consumeraffairs.com/news/shein-return-policy-decoded-the-fees-deadlines-and-exceptions-to-know-082126.html)
+- [Google Play listing (package com.zzkko)](https://appireview.pages.dev/com.zzkko)
